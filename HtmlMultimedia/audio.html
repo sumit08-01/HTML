@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio</title>
+  </head>
+  <body>
+    <div>
+      <audio controls>
+        <source src="audioCat.mp3" type="audio/ogg" />
+        <source src="audioCat.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <hr />
+    <div>
+      <h4>
+        Note: Chromium browsers do not allow autoplay in most cases. However,
+        muted autoplay is always allowed. Add muted after autoplay to let your
+        audio file start playing automatically (but muted):
+      </h4>
+      <!-- <audio controls autoplay> -->
+      <audio controls autoplay muted>
+        <source src="audioCat.mp3" type="audio/mpeg" />
+        <source src="audioCat.mp3" type="audio/ogg" />
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </body>
+</html>

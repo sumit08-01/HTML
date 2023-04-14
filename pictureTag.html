@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture Tag</title>
+  </head>
+  <body>
+    The HTML <picture> picture-tag element allows you to display different pictures for different devices or screen sizes
+        <pre>
+            The HTML <picture>pictur-tag Element
+                The HTML <picture> element gives web developers more flexibility in specifying image resources.
+                
+                The <picture> element contains one or more <source> src-tag elements, each referring to different images through the srcset attribute. This way the browser can choose the image that best fits the current view and/or device.
+                
+                Each <source> element has a media attribute that defines when the image is the most suitable.
+        </pre>
+        Note: Always specify an <img> element as the last child element of the <picture> element. The <img> element is used by browsers that do not support the <picture> element, or if none of the <source> tags match.
+         <div>
+            <h2>The picture Element</h2>
+
+                <picture>
+                <source media="(min-width: 650px)" srcset="food.jpeg">
+                <source media="(min-width: 465px)" srcset="car.jpeg">
+                <img src="girl.jpeg" style="width:auto;">
+                </picture>
+
+                <p>Resize the browser to see different versions of the picture loading at different viewport sizes.
+                The browser looks for the first source element where the media query matches the user's current viewport width,
+                and fetches the image specified in the srcset attribute.</p>
+
+                <p>The img element is required as the last child tag of the picture declaration block.
+                The img element is used to provide backward compatibility for browsers that do not support the picture element, or if none of the source tags matched.
+                </p>
+
+                <p><strong>Note:</strong> The picture element is not supported in IE12 and earlier or Safari 9.0 and earlier.</p>
+
+                <h2>The picture Element</h2>
+
+<picture>
+  <source srcset="avtar.jpg">
+  <source srcset="girl.jpeg">
+  <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+</picture>
+
+<p>The picture element can be used when the image format is not supported by all devices.</p>
+
+<p>The device will use the first image format it supports, and ignore the rest of the images.</p>
+
+
+         </div>   
+  </body>
+</html>

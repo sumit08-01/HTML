@@ -1,0 +1,167 @@
+here are two ways to specify the URL in the src attribute:
+
+1. Absolute URL - Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".
+
+Notes: External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.
+
+2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".
+
+Tip: It is almost always best to use relative URLs. They will not break if you change domain.
+
+
+Setting the style of an HTML element, can be done with the style attribute.
+The HTML style attribute has the following syntax:
+<tagname style="property:value;">
+
+------------------------------
+useMap in Html tag -->>
+To find the coordinate of any image use the link 
+https://programminghead.com/Projects/find-coordinates-of-image-online.html -->>Link
+
+But, The image is uploaded in html page and paint(the link) and same 
+and we can use paint also to find the image 
+
+------------------------------------------------------
+Use Lower Case File Names
+Some web servers (Apache, Unix) are case sensitive about file names: "london.jpg" cannot be accessed as "London.jpg".
+
+Other web servers (Microsoft, IIS) are not case sensitive: "london.jpg" can be accessed as "London.jpg".
+
+If you use a mix of uppercase and lowercase, you have to be aware of this.
+
+If you move from a case-insensitive to a case-sensitive server, even small errors will break your web!
+
+To avoid these problems, always use lowercase file names!
+
+File Extensions
+HTML files should have a .html extension (.htm is allowed).
+
+CSS files should have a .css extension.
+
+JavaScript files should have a .js extension.
+
+Differences Between .htm and .html?
+There is no difference between the .htm and .html file extensions!
+
+Both will be treated as HTML by any web browser and web server.
+
+Default Filenames
+When a URL does not specify a filename at the end (like "https://www.w3schools.com/"), the server just adds a default filename, such as "index.html", "index.htm", "default.html", or "default.htm".
+
+If your server is configured only with "index.html" as the default filename, your file must be named "index.html", and not "default.html".
+
+However, servers can be configured with more than one default filename; usually you can set up as many default filenames as you want.
+
+------------------------------------------------------------
+
+HTML Entities
+Some characters are reserved in HTML.
+
+If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags.
+
+Character entities are used to display reserved characters in HTML.
+
+A character entity looks like this:
+
+---------------------------------------------------------
+
+HTML Symbol Entities
+HTML entities were described in the previous chapter.
+
+Many mathematical, technical, and currency symbols, are not present on a normal keyboard.
+
+To add such symbols to an HTML page, you can use the entity name or the entity number (a decimal or a hexadecimal reference) for the symbol.
+------------------------------------------------------------
+
+Emojis are characters from the UTF-8 character set: 😄 😍 💗
+
+What are Emojis?
+Emojis look like images, or icons, but they are not.
+
+They are letters (characters) from the UTF-8 (Unicode) character set.
+
+UTF-8 covers almost all of the characters and symbols in the world.
+-----------------------------------------------------------------
+
+To display an HTML page correctly, a web browser must know which character set to use.
+
+From ASCII to UTF-8
+ASCII was the first character encoding standard. ASCII defined 128 different characters that could be used on the internet: numbers (0-9), English letters (A-Z), and some special characters like ! $ + - ( ) @ < > .
+
+ISO-8859-1 was the default character set for HTML 4. This character set supported 256 different character codes. HTML 4 also supported UTF-8.
+
+ANSI (Windows-1252) was the original Windows character set. ANSI is identical to ISO-8859-1, except that ANSI has 32 extra characters.
+
+The HTML5 specification encourages web developers to use the UTF-8 character set, which covers almost all of the characters and symbols in the world!
+
+The HTML charset Attribute
+To display an HTML page correctly, a web browser must know the character set used in the page.
+
+This is specified in the <meta> tag:
+
+---------------------------------------------------------------------
+A URL is another word for a web address.
+
+A URL can be composed of words (e.g. w3schools.com), or an Internet Protocol (IP) address (e.g. 192.68.20.50).
+
+Most people enter the name when surfing, because names are easier to remember than numbers.
+
+URL - Uniform Resource Locator
+Web browsers request pages from web servers by using a URL.
+
+A Uniform Resource Locator (URL) is used to address a document (or other data) on the web.
+
+A web address like https://www.w3schools.com/html/default.asp follows these syntax rules:
+
+scheme://prefix.domain:port/path/filename
+
+---------------------------------------------
+HTML Versus XHTML
+
+XHTML is a stricter, more XML-based version of HTML.
+
+What is XHTML?
+XHTML stands for EXtensible HyperText Markup Language
+XHTML is a stricter, more XML-based version of HTML
+XHTML is HTML defined as an XML application
+XHTML is supported by all major browsers
+Why XHTML?
+XML is a markup language where all documents must be marked up correctly (be "well-formed").
+
+XHTML was developed to make HTML more extensible and flexible to work with other data formats (such as XML). In addition, browsers ignore errors in HTML pages, and try to display the website even if it has some errors in the markup. So XHTML comes with a much stricter error handling.
+
+If you want to study XML, please read our XML Tutorial.
+
+The Most Important Differences from HTML
+<!DOCTYPE> is mandatory
+The xmlns attribute in <html> is mandatory
+<html>, <head>, <title>, and <body> are mandatory
+Elements must always be properly nested
+Elements must always be closed
+Elements must always be in lowercase
+Attribute names must always be in lowercase
+Attribute values must always be quoted
+Attribute minimization is forbidden
+
+
+--------------------------------------------------
+Input Restrictions
+Here is a list of some common input restrictions:
+
+Attribute	Description
+checked	Specifies that an input field should be pre-selected when the page loads (for type="checkbox" or type="radio")
+disabled	Specifies that an input field should be disabled
+max	Specifies the maximum value for an input field
+maxlength	Specifies the maximum number of character for an input field
+min	Specifies the minimum value for an input field
+pattern	Specifies a regular expression to check the input value against
+readonly	Specifies that an input field is read only (cannot be changed)
+required	Specifies that an input field is required (must be filled out)
+size	Specifies the width (in characters) of an input field
+step	Specifies the legal number intervals for an input field
+value	Specifies the default value for an input field
+You will learn more about input restrictions in the next chapter.
+
+The following example displays a numeric input field, where you can enter a value from 0 to 100, in steps of 10. The default value is 30:
+
+

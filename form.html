@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <b>
+      An HTML form is used to collect user input. The user input is most often
+      sent to a server for processing. </b
+    ><br />
+
+    <div>
+      <pre>
+        <h3>Type	Description</h3>
+<input type="text">	Displays a single-line text input field
+<input type="radio">	Displays a radio button (for selecting one of many choices)
+<input type="checkbox">	Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit">	Displays a submit button (for submitting the form)
+<input type="button">	Displays a clickable button
+    </pre>
+    </div>
+
+    <div>
+      <h2>Text input fields</h2>
+
+      <form>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="John" /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" value="Doe" />
+      </form>
+
+      <p>Note that the form itself is not visible.</p>
+
+      <p>
+        Also note that the default width of text input fields is 20 characters.
+      </p>
+    </div>
+    <div>
+      <h2>Radio Buttons</h2>
+
+      <p>Choose your favorite Web language:</p>
+
+      <form>
+          <input type="radio" id="html" name="fav_language" value="HTML" />  
+        <label for="html">HTML</label><br />
+          <input type="radio" id="css" name="fav_language" value="CSS" />  
+        <label for="css">CSS</label><br />
+         
+        <input
+          type="radio"
+          id="javascript"
+          name="fav_language"
+          value="JavaScript"
+        />
+          <label for="javascript">JavaScript</label>
+      </form>
+    </div>
+    <div>
+      <h2>Checkboxes</h2>
+      <p>The <strong>input type="checkbox"</strong> defines a checkbox:</p>
+
+      <form action="/action_page.php">
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+        <label for="vehicle1"> I have a bike</label><br />
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+        <label for="vehicle2"> I have a car</label><br />
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+        <label for="vehicle3"> I have a boat</label><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <div>
+      <h2>HTML Forms</h2>
+
+      <form action="/action_page.php">
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="John" /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+
+      <p>
+        If you click the "Submit" button, the form-data will be sent to a page
+        called "/action_page.php".
+      </p>
+    </div>
+    <div>
+      <h2>The name Attribute</h2>
+
+      <form action="/action_page.php">
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" value="John" /><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+
+      <p>
+        If you click the "Submit" button, the form-data will be sent to a page
+        called "/action_page.php".
+      </p>
+
+      <p>
+        Notice that the value of the "First name" field will not be submitted,
+        because the input element does not have a name attribute.
+      </p>
+    </div>
+    <div>
+      <h2>The form target attribute</h2>
+
+      <p>
+        When submitting this form, the result will be opened in a new browser
+        tab:
+      </p>
+
+      <form action="/action_page.php" target="_blank">
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="John" /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" value="Doe" /><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <div>
+      <h1>The form autocomplete attribute</h1>
+
+      <p>
+        Fill in and submit the form, then reload the page, start to fill in the
+        form again - and see how autocomplete works.
+      </p>
+
+      <p>Then, try to set autocomplete to "off".</p>
+
+      <form action="/action_page.php" autocomplete="on">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" /><br /><br />
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" /><br /><br />
+        <input type="submit" />
+      </form>
+</div>
+<div>
+      <ul>
+        HTML Form Elements
+Tag	Description
+<form>	Defines an HTML form for user input
+<input>	Defines an input control
+<textarea>	Defines a multiline input control (text area)
+<label>	Defines a label for an <input> element
+<fieldset>	Groups related elements in a form
+<legend>	Defines a caption for a <fieldset> element
+<select>	Defines a drop-down list
+<optgroup>	Defines a group of related options in a drop-down list
+<option>	Defines an option in a drop-down list
+<button>	Defines a clickable button
+<datalist>	Specifies a list of pre-defined options for input controls
+<output>	Defines the result of a calculation
+      </ul>
+    </div>
+    <div>
+      <h1>The input disabled attribute</h1>
+
+<p>The disabled attribute specifies that an input field should be disabled (unusable and un-clickable):</p>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John" disabled><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+    </div>
+    <div>
+      
+<h1>The input size attribute</h1>
+
+<p>The size attribute specifies the width (in characters) of an input field:</p>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="50"><br>
+  <label for="pin">PIN:</label><br>
+  <input type="text" id="pin" name="pin" size="4"><br><br>
+  <input type="submit" value="Submit">
+</form>
+    </div>
+    <div>
+      <h1>The input maxlength attribute</h1>
+
+<p>The maxlength attribute specifies the maximum number of characters allowed in an input field:</p>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" size="50"><br>
+  <label for="pin">PIN:</label><br>
+  <input type="text" id="pin" name="pin" maxlength="4" size="4"><br><br>
+  <input type="submit" value="Submit">
+</form>
+    </div>
+
+    <div>
+      <h1>The input min and max attributes</h1>
+
+<p>The min and max attributes specify the minimum and maximum values for an input element.</p>
+
+<form action="/action_page.php">
+  <label for="datemax">Enter a date before 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+  <label for="datemin">Enter a date after 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+  
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+    </div>
+
+    <div>
+      h1>The input multiple attributes</h1>
+
+<p>The multiple attribute specifies that the user is allowed to enter more than one value in an input field.</p>
+
+<form action="/action_page.php">
+  <label for="files">Select files:</label>
+  <input type="file" id="files" name="files" multiple><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>To select multiple files, hold down the CTRL or SHIFT key while selecting.</p>
+
+    </div>
+    <div>
+      <h1>The input pattern attribute</h1>
+
+<p>The pattern attribute specifies a regular expression that the input element's value is checked against.</p>
+
+<form action="/action_page.php">
+  <label for="country_code">Country code:</label>
+  <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p><strong>Note:</strong> The pattern attribute of the input tag is not supported in Safari 10 (or earlier).</p>
+    </div>
+    <div>
+      h1>The input required attribute</h1>
+
+<p>The required attribute specifies that an input field must be filled out before submitting the form.</p>
+
+<form action="/action_page.php">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+  <input type="submit" value="Submit">
+</form>
+
+<p><strong>Note:</strong> The required attribute of the input tag is not supported in Safari prior version 10.1.</p>
+
+    </div>
+
+    <div>
+      <h1>The input step attribute</h1>
+
+<p>The step attribute specifies the legal number intervals for an input element.</p>
+
+<form action="/action_page.php">
+  <label for="points">Points:</label>
+  <input type="number" id="points" name="points" step="3">
+  <input type="submit" value="Submit">
+</form>
+    </div>
+    <div>
+      <h1>The input autofocus attribute</h1>
+
+<p>The autofocus attribute specifies that the input field should automatically get focus when the page loads.</p>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" autofocus><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+    </div>
+    <div>
+      <h1>The input list attribute</h1>
+
+<p>The list attribute refers to a datalist element that contains pre-defined options for an input element.</p>
+
+<form action="/action_page.php">
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit" value="Submit">
+</form>
+
+<p><b>Note:</b> The datalist tag is not supported in Safari 12.0 (or earlier).</p>
+    </div>
+
+    <div>
+      <h1>The autocomplete attribute</h1>
+
+<p>The autocomplete attribute specifies whether or not an input field should have autocomplete enabled.</p>
+
+<p>Fill in and submit the form, then reload the page to see how autocomplete works.</p>
+
+<p>Notice that autocomplete is "on" for the form, but "off" for the e-mail field!</p>
+
+<form action="/action_page.php" autocomplete="on">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" autocomplete="off"><br><br>
+  <input type="submit" value="Submit">
+</form>
+    </div>
+  </body>
+</html>
